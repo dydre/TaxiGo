@@ -1,8 +1,8 @@
 package main
 
 import (
-	pb "ride-sharing/shared/proto/trip"
-	"ride-sharing/shared/types"
+	pb "taxigo/shared/proto/trip"
+	"taxigo/shared/types"
 )
 
 type previewTripRequest struct {

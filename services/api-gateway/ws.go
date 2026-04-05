@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"ride-sharing/services/api-gateway/grpc_clients"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/messaging"
-	"ride-sharing/shared/proto/driver"
+	"taxigo/services/api-gateway/grpc_clients"
+	"taxigo/shared/contracts"
+	"taxigo/shared/messaging"
+	"taxigo/shared/proto/driver"
 )
 
 var (

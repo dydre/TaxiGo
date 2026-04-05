@@ -9,9 +9,9 @@ import (
 	"syscall"
 	"time"
 
-	"ride-sharing/shared/env"
-	"ride-sharing/shared/messaging"
-	"ride-sharing/shared/tracing"
+	"taxigo/shared/env"
+	"taxigo/shared/messaging"
+	"taxigo/shared/tracing"
 )
 
 var (

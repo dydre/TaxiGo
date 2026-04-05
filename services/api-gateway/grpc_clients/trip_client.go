@@ -2,8 +2,8 @@ package grpc_clients
 
 import (
 	"os"
-	pb "ride-sharing/shared/proto/trip"
-	"ride-sharing/shared/tracing"
+	pb "taxigo/shared/proto/trip"
+	"taxigo/shared/tracing"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
