@@ -2,11 +2,11 @@ package domain
 
 import (
 	"context"
-	"ride-sharing/shared/types"
+	"taxigo/shared/types"
 
-	tripTypes "ride-sharing/services/trip-service/pkg/types"
-	pbd "ride-sharing/shared/proto/driver"
-	pb "ride-sharing/shared/proto/trip"
+	tripTypes "taxigo/services/trip-service/pkg/types"
+	pbd "taxigo/shared/proto/driver"
+	pb "taxigo/shared/proto/trip"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

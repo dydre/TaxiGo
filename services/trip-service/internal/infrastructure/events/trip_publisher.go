@@ -3,9 +3,9 @@ package events
 import (
 	"context"
 	"encoding/json"
-	"ride-sharing/services/trip-service/internal/domain"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/messaging"
+	"taxigo/services/trip-service/internal/domain"
+	"taxigo/shared/contracts"
+	"taxigo/shared/messaging"
 )
 
 type TripEventPublisher struct {

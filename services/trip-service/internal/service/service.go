@@ -7,12 +7,12 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"ride-sharing/services/trip-service/internal/domain"
-	tripTypes "ride-sharing/services/trip-service/pkg/types"
-	"ride-sharing/shared/env"
-	pbd "ride-sharing/shared/proto/driver"
-	"ride-sharing/shared/proto/trip"
-	"ride-sharing/shared/types"
+	"taxigo/services/trip-service/internal/domain"
+	tripTypes "taxigo/services/trip-service/pkg/types"
+	"taxigo/shared/env"
+	pbd "taxigo/shared/proto/driver"
+	"taxigo/shared/proto/trip"
+	"taxigo/shared/types"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

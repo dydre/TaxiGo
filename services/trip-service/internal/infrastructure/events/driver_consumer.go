@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"ride-sharing/services/trip-service/internal/domain"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/messaging"
-	pbd "ride-sharing/shared/proto/driver"
+	"taxigo/services/trip-service/internal/domain"
+	"taxigo/shared/contracts"
+	"taxigo/shared/messaging"
+	pbd "taxigo/shared/proto/driver"
 
 	"github.com/rabbitmq/amqp091-go"
 )

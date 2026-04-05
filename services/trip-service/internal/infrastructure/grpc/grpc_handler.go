@@ -3,10 +3,10 @@ package grpc
 import (
 	"context"
 	"log"
-	"ride-sharing/services/trip-service/internal/domain"
-	"ride-sharing/services/trip-service/internal/infrastructure/events"
-	pb "ride-sharing/shared/proto/trip"
-	"ride-sharing/shared/types"
+	"taxigo/services/trip-service/internal/domain"
+	"taxigo/services/trip-service/internal/infrastructure/events"
+	pb "taxigo/shared/proto/trip"
+	"taxigo/shared/types"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

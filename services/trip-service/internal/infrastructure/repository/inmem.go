@@ -3,9 +3,9 @@ package repository
 import (
 	"context"
 	"fmt"
-	"ride-sharing/services/trip-service/internal/domain"
-	pbd "ride-sharing/shared/proto/driver"
-	pb "ride-sharing/shared/proto/trip"
+	"taxigo/services/trip-service/internal/domain"
+	pbd "taxigo/shared/proto/driver"
+	pb "taxigo/shared/proto/trip"
 )
 
 type inmemRepository struct {
