@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"sync"
 
-	"ride-sharing/shared/contracts"
+	"taxigo/shared/contracts"
 
 	"github.com/gorilla/websocket"
 )

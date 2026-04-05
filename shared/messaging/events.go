@@ -1,8 +1,8 @@
 package messaging
 
 import (
-	pbd "ride-sharing/shared/proto/driver"
-	pb "ride-sharing/shared/proto/trip"
+	pbd "taxigo/shared/proto/driver"
+	pb "taxigo/shared/proto/trip"
 )
 
 const (
@@ -14,8 +14,15 @@ const (
 	PaymentTripResponseQueue         = "payment_trip_response"
 	NotifyPaymentSessionCreatedQueue = "notify_payment_session_created"
 	NotifyPaymentSuccessQueue        = "payment_success"
+	RatingTripCompletedQueue         = "rating_trip_completed"
 	DeadLetterQueue                  = "dead_letter_queue"
 )
+
+type RatingPaymentSuccessData struct {
+	TripID   string `json:"tripID"`
+	UserID   string `json:"userID"`
+	DriverID string `json:"driverID"`
+}
 
 type TripEventData struct {
 	Trip *pb.Trip `json:"trip"`

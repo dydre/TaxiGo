@@ -27,7 +27,7 @@ type MongoConfig struct {
 func NewMongoDefaultConfig() *MongoConfig {
 	return &MongoConfig{
 		URI:      os.Getenv("MONGODB_URI"),
-		Database: "ride-sharing",
+		Database: "taxigo",
 	}
 }
 

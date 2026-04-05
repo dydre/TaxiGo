@@ -29,4 +29,7 @@ const (
 
 	// Payment commands (payment.cmd.*)
 	PaymentCmdCreateSession = "payment.cmd.create_session"
+
+	// Rating events (rating.event.*)
+	RatingEventSubmitted = "rating.event.submitted"
 )

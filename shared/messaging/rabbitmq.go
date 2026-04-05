@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/retry"
-	"ride-sharing/shared/tracing"
+	"taxigo/shared/contracts"
+	"taxigo/shared/retry"
+	"taxigo/shared/tracing"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 )
@@ -269,6 +269,14 @@ func (r *RabbitMQ) setupExchangesAndQueues() error {
 
 	if err := r.declareAndBindQueue(
 		NotifyPaymentSuccessQueue,
+		[]string{contracts.PaymentEventSuccess},
+		TripExchange,
+	); err != nil {
+		return err
+	}
+
+	if err := r.declareAndBindQueue(
+		RatingTripCompletedQueue,
 		[]string{contracts.PaymentEventSuccess},
 		TripExchange,
 	); err != nil {

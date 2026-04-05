@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"ride-sharing/shared/contracts"
+	"taxigo/shared/contracts"
 )
 
 type QueueConsumer struct {
