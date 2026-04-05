@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package rating;
+
+option go_package = "shared/proto/rating;rating";
+
+service RatingService {
+  rpc SubmitRating(SubmitRatingRequest) returns (SubmitRatingResponse);
+  rpc GetDriverStats(GetDriverStatsRequest) returns (GetDriverStatsResponse);
+}
+
+message SubmitRatingRequest {
+  string tripID   = 1;
+  string userID   = 2;
+  string driverID = 3;
+  int32  score    = 4; // 1-5
+  string comment  = 5;
+}
+
+message SubmitRatingResponse {
+  string ratingID   = 1;
+  string tripID     = 2;
+  int32  score      = 3;
+  string createdAt  = 4;
+}
+
+message GetDriverStatsRequest {
+  string driverID = 1;
+}
+
+message GetDriverStatsResponse {
+  string driverID      = 1;
+  double averageRating = 2;
+  int32  totalRatings  = 3;
+}
