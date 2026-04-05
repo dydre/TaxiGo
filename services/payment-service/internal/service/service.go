@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"ride-sharing/services/payment-service/internal/domain"
-	"ride-sharing/services/payment-service/pkg/types"
+	"taxigo/services/payment-service/internal/domain"
+	"taxigo/services/payment-service/pkg/types"
 
 	"github.com/google/uuid"
 )

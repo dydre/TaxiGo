@@ -7,13 +7,13 @@ import (
 	"os/signal"
 	"syscall"
 
-	"ride-sharing/services/payment-service/internal/events"
-	"ride-sharing/services/payment-service/internal/infrastructure/stripe"
-	"ride-sharing/services/payment-service/internal/service"
-	"ride-sharing/services/payment-service/pkg/types"
-	"ride-sharing/shared/env"
-	"ride-sharing/shared/messaging"
-	"ride-sharing/shared/tracing"
+	"taxigo/services/payment-service/internal/events"
+	"taxigo/services/payment-service/internal/infrastructure/stripe"
+	"taxigo/services/payment-service/internal/service"
+	"taxigo/services/payment-service/pkg/types"
+	"taxigo/shared/env"
+	"taxigo/shared/messaging"
+	"taxigo/shared/tracing"
 )
 
 var GrpcAddr = env.GetString("GRPC_ADDR", ":9004")

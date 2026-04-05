@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"log"
 
-	"ride-sharing/services/payment-service/internal/domain"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/messaging"
+	"taxigo/services/payment-service/internal/domain"
+	"taxigo/shared/contracts"
+	"taxigo/shared/messaging"
 
 	"github.com/rabbitmq/amqp091-go"
 )

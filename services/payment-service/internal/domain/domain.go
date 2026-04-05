@@ -3,7 +3,7 @@ package domain
 import (
 	"context"
 
-	"ride-sharing/services/payment-service/pkg/types"
+	"taxigo/services/payment-service/pkg/types"
 )
 
 type Service interface {

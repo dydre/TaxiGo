@@ -3,8 +3,8 @@ package stripe
 import (
 	"context"
 	"fmt"
-	"ride-sharing/services/payment-service/internal/domain"
-	"ride-sharing/services/payment-service/pkg/types"
+	"taxigo/services/payment-service/internal/domain"
+	"taxigo/services/payment-service/pkg/types"
 
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/checkout/session"
