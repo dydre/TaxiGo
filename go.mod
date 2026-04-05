@@ -1,4 +1,4 @@
-module ride-sharing
+module taxigo
 
 go 1.23.0
 

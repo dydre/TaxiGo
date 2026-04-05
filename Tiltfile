@@ -25,7 +25,7 @@ local_resource(
 
 
 docker_build_with_restart(
-  'ride-sharing/api-gateway',
+  'taxigo/api-gateway',
   '.',
   entrypoint=['/app/build/api-gateway'],
   dockerfile='./infra/development/docker/api-gateway.Dockerfile',
@@ -55,7 +55,7 @@ local_resource(
   deps=['./services/trip-service', './shared'], labels="compiles")
 
 docker_build_with_restart(
-  'ride-sharing/trip-service',
+  'taxigo/trip-service',
   '.',
   entrypoint=['/app/build/trip-service'],
   dockerfile='./infra/development/docker/trip-service.Dockerfile',
@@ -85,7 +85,7 @@ local_resource(
   deps=['./services/driver-service', './shared'], labels="compiles")
 
 docker_build_with_restart(
-  'ride-sharing/driver-service',
+  'taxigo/driver-service',
   '.',
   entrypoint=['/app/build/driver-service'],
   dockerfile='./infra/development/docker/driver-service.Dockerfile',
@@ -106,7 +106,7 @@ k8s_resource('driver-service', resource_deps=['driver-service-compile', 'rabbitm
 ### Web Frontend ###
 
 docker_build(
-  'ride-sharing/web',
+  'taxigo/web',
   '.',
   dockerfile='./infra/development/docker/web.Dockerfile',
 )
@@ -129,7 +129,7 @@ local_resource(
   deps=['./services/payment-service', './shared'], labels="compiles")
 
 docker_build_with_restart(
-  'ride-sharing/payment-service',
+  'taxigo/payment-service',
   '.',
   entrypoint=['/app/build/payment-service'],
   dockerfile='./infra/development/docker/payment-service.Dockerfile',
