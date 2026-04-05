@@ -6,9 +6,9 @@ import (
 	"net"
 	"os"
 	"os/signal"
-	"ride-sharing/shared/env"
-	"ride-sharing/shared/messaging"
-	"ride-sharing/shared/tracing"
+	"taxigo/shared/env"
+	"taxigo/shared/messaging"
+	"taxigo/shared/tracing"
 	"syscall"
 
 	grpcserver "google.golang.org/grpc"

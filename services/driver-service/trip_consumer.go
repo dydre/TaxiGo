@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"log"
 	"math/rand"
-	"ride-sharing/shared/contracts"
-	"ride-sharing/shared/messaging"
+	"taxigo/shared/contracts"
+	"taxigo/shared/messaging"
 
 	"github.com/rabbitmq/amqp091-go"
 )

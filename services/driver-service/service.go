@@ -2,8 +2,8 @@ package main
 
 import (
 	math "math/rand/v2"
-	pb "ride-sharing/shared/proto/driver"
-	"ride-sharing/shared/util"
+	pb "taxigo/shared/proto/driver"
+	"taxigo/shared/util"
 	"sync"
 
 	"github.com/mmcloughlin/geohash"

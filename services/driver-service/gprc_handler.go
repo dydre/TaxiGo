@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	pb "ride-sharing/shared/proto/driver"
+	pb "taxigo/shared/proto/driver"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
