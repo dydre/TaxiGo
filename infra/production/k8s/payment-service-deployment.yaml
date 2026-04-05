@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: payment-service
-          image: europe-west1-docker.pkg.dev/{{PROJECT_ID}}/ride-sharing/payment-service
+          image: europe-west1-docker.pkg.dev/{{PROJECT_ID}}/taxigo/payment-service
           ports:
             - containerPort: 9004
           resources:

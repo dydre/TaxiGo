@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: driver-service
-          image: europe-west1-docker.pkg.dev/{{PROJECT_ID}}/ride-sharing/driver-service
+          image: europe-west1-docker.pkg.dev/{{PROJECT_ID}}/taxigo/driver-service
           env:
             # Jaeger endpoint
             - name: JAEGER_ENDPOINT

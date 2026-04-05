@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rating-service
+  labels:
+    app: rating-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rating-service
+  template:
+    metadata:
+      labels:
+        app: rating-service
+    spec:
+      containers:
+        - name: rating-service
+          image: taxigo/rating-service
+          ports:
+            - containerPort: 9005
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+          env:
+            - name: GRPC_ADDR
+              value: ":9005"
+            - name: JAEGER_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  key: JAEGER_ENDPOINT
+                  name: app-config
+            - name: RABBITMQ_URI
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-credentials
+                  key: uri
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rating-service
+spec:
+  selector:
+    app: rating-service
+  ports:
+    - port: 9005
+      name: grpc
+      targetPort: 9005
+  type: ClusterIP
